@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="kutuphane1927" Class="KutuphaneDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WIN-SERVER\SQLEXPRESS;Initial Catalog=kutuphane1927;Persist Security Info=True;User ID=sa" SettingsObjectName="KutuphaneVeritabani.Properties.Settings" SettingsPropertyName="kutuphane1927ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Kitaplar" Member="dbKitaplars">
+    <Type Name="dbKitaplar">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KitapAdi" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Turu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Yazar" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="SayfaSayisi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BasimYili" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="RafNo" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Adet" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KitapTurleri" Member="dbKitapTurleris">
+    <Type Name="dbKitapTurleri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KitapTuru" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
